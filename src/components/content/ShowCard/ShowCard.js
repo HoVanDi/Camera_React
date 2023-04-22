@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 class ShowCard extends Component {
-  haveNewPrice = () => this.props.newprice > 0;
+  haveNewPrice = () => this.props.newprice > 0; 
   render() {
     return (
         <div className="product">
