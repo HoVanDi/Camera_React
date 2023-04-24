@@ -8,7 +8,6 @@ function Bai4() {
     const [color, setColor] = useState("red");
         
 
-  
     return (
         <div>
             <h1>My {brand}</h1>

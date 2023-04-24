@@ -4,7 +4,14 @@ import React from "react";
 import "./App.css";
 // import Count from "../content/Hook";
 // import Example from "../content/Hook1";
-import Color from "../content/Changeimage";
+//import Color from "../content/Changeimage";
+
+// import JustAnother from "./hook/JustAnother";
+// import Color from "./hook/Color";
+// import Car from "./hook/Car";
+// import LoginForm from "./hook/LoginFrom";
+// import From_Reac from "../content/From_Reac";
+import Avg from "../content/Avg";
 
 // import Statedemo from "../content/stateDemo";
 // import Change from "../content/change";
@@ -22,7 +29,12 @@ import Color from "../content/Changeimage";
 function App() {
   return (
     <div id="container">
+      {/* <JustAnother></JustAnother>
       <Color></Color>
+      <Car></Car>
+      <LoginForm></LoginForm>
+      <From_Reac></From_Reac> */}
+      <Avg></Avg>
     </div>
   );
 }
