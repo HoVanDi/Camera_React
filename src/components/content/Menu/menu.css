@@ -1,0 +1,41 @@
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+td {
+  padding: 10px;
+}
+
+select {
+  width: 150px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type='number'] {
+  width: 150px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type='submit'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #008CBA;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type='submit']:hover {
+  background-color: #006B9F;
+}

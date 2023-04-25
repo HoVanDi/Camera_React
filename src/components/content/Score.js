@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
- class Avg extends Component {
+ class Score extends Component {
 constructor(props){
   super(props);
   this.state={
@@ -12,14 +12,14 @@ constructor(props){
   };
   this.handleChange = this.handleChange.bind(this);
   this.handleSubmit = this.handleSubmit.bind(this);
-  //this.setResult = this.setResult.bind(this);
-}
-handleChange =(event)=>{
-  let key = event.target.name;
-  let val = event.target.value;
 
-  this.setState({[key]:val});
-  this.setState((state)=>({
+}
+handleChange = async (event)=>{
+    let key = event.target.name;
+    let val = event.target.value;
+
+   await this.setState({ [key]: val });
+   await this.setState((state)=>({
     avg: parseFloat((parseFloat(state.hk1) + parseFloat(state.hk2))/2),
   }));
   this.setResult();
@@ -32,7 +32,7 @@ handleSubmit =(event) =>{
 }
 
 setResult =()=>{
-  if (this.state.avg >= 4.5)this.setState({result: "Được lên lớp"});
+  if (this.state.avg > 4.5)this.setState({result: "Được lên lớp"});
   else this.setState({result:"Ở lại lớp"});
 };
 
@@ -111,13 +111,11 @@ setXL =()=>{
             value={this.state.xl}
             />
           </div>
-
           <button type='submit' value="Submit" className='btn btn-primary'> xem kết quả</button>
-
         </form>
       </div>
     );
   }
 }
 
-export default Avg;
+export default Score;

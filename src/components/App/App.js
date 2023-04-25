@@ -11,7 +11,13 @@ import "./App.css";
 // import Car from "./hook/Car";
 // import LoginForm from "./hook/LoginFrom";
 // import From_Reac from "../content/From_Reac";
-import Avg from "../content/Avg";
+
+//import Score from "../content/Score";
+
+
+// import Menu from "../content/Menu/Menu";
+import Menu1 from "../content/Menu/Hookmenu";
+
 
 // import Statedemo from "../content/stateDemo";
 // import Change from "../content/change";
@@ -34,7 +40,11 @@ function App() {
       <Car></Car>
       <LoginForm></LoginForm>
       <From_Reac></From_Reac> */}
-      <Avg></Avg>
+   
+      {/* <Score></Score> */}
+
+      {/* <Menu></Menu> */}
+<Menu1></Menu1>
     </div>
   );
 }
