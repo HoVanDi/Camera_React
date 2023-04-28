@@ -11,6 +11,7 @@ class Menu extends Component {
     };
   }
 
+  
   checkOrder = (money) => {  // được gọi bởi submitForm
     if (money >= this.state.price) {
       alert(
